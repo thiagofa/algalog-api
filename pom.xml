@@ -13,7 +13,7 @@
 	<artifactId>algalog-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>algalog-api</name>
-	<description>API do AlgaLog2</description>
+	<description>API do AlgaLog</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -89,5 +89,13 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>GitHub Packages</name>
+			<url>https://maven.pkg.github.com/thiagofa/algalog-api</url>
+		</repository>
+	</distributionManagement>
 
 </project>
