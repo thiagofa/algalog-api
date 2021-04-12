@@ -13,16 +13,13 @@
 	<artifactId>algalog-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>algalog-api</name>
-	<description>API do AlgaLog</description>
+	<description>API do AlgaLog2</description>
 
 	<properties>
-	
 		<java.version>11</java.version>
-		
 	</properties>
 
 	<dependencies>
-	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
