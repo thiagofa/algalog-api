@@ -65,6 +65,6 @@ jobs:
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: ${{ github.repository }}/algalog-api
+          repository: ${{ github.repository }}
           tag_with_sha: true # Marca o pacote publicado com os primeiros sete caracteres do SHA do commit.
           tag_with_ref: true # Tags o pacote publicado com a referência do Git. Este pode ser o nome do branch usado para criar o pacote.
