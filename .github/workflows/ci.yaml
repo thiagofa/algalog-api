@@ -78,5 +78,5 @@ jobs:
           context: .
 #          platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/thiagofa/algalog-api:latest
+          tags: ghcr.io/thiagofa/algalog-api/algalog-api:latest
 
