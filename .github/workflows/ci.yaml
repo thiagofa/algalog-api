@@ -14,12 +14,22 @@ jobs:
         with:
           java-version: 11
           distribution: 'adopt'
+        
+      - name: Cache Maven packages
+        uses: actions/cache@v2
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
 
       - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
         
-      - run: mkdir staging && cp target/*.jar staging
-      - uses: actions/upload-artifact@v2
+      - name: Copy JAR file 
+        run: mkdir staging && cp target/*.jar staging
+
+      - name: Upload JAR file 
+        uses: actions/upload-artifact@v2
         with:
           name: Algalog JAR File
           path: staging
