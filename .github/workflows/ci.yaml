@@ -1,6 +1,11 @@
 name: AlgaLog API CI
 
-on: [push]
+#on: [push]
+
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   maven-verify:
